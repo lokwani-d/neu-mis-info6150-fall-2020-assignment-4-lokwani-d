@@ -4,7 +4,7 @@ This is a README.md file for the Assignment 4 of the course *INFO-6150 Web Desig
 ________________________________
 ## Contributors  
 >Intstructor: Prof. Amuthan Arulraj  
->Teaching Assistant: Mengchen Gao
+>Teaching Assistant: Mengchen Gao  
 >Teaching Assistant: Ravi Pilla  
 >Student: Deepak Lokwani
 
