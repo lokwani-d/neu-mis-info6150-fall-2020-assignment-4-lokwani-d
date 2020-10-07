@@ -1,0 +1,7 @@
+//partial that carries all the variables
+$brand-color: rgb(55, 175, 168); //primary pallette color for brand
+$brand-color-faded: rgba(55,175,168,0.2); //faded primary color for blog user dp
+$secondary-color: rgb(126,126,126); //secondary color variable for gray  
+$circle_diameter: 25vh; 
+$font-stack: Roboto, sans-serif; //used font-stack variable instead of passing font
+$col-slug: col !default; //slugged variable for columns for making the grid using for loop

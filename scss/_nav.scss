@@ -1,0 +1,56 @@
+//partial that carries all nav styling 
+@import "_home.scss";
+.navigation{
+    @include container;
+    z-index: 10;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    height: 100px;
+    border-bottom: 1px solid $secondary-color;
+    ul{
+        padding-top: 20px;
+        list-style-type: none;
+        padding-left: 0;
+        li{
+            padding-top: 5px;
+            float: left;
+            
+            a{
+                text-decoration: none;
+                font-size: 1.1em;
+                padding-right: 30px;
+                color: $secondary-color;
+            }
+            a:hover{
+                color:$brand-color;
+            }
+            .active{
+                color: $brand-color;   
+            }
+            .brandName{
+                color: $brand-color;
+                font-size: 1.8em;
+                font-weight: 700;
+                float: left;
+                padding-right: 23vw;
+            }
+        }
+        .divButton{
+            color: white;
+            float: right;
+            height: 40px;
+            width: 150px;
+            background-color: $brand-color;
+            position: relative;
+            // top: -20%;
+            border-radius: 20px;
+            text-align: center;
+            p{
+                margin-top: 10px;
+                position: relative;
+                // top: 1%;
+            }
+        }
+    }
+}

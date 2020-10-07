@@ -1,0 +1,61 @@
+//partial that carries almost all the image related elements
+.services {
+    @include service-Images;
+}
+.serviceImage {
+    // @include service-Images;
+    // background-color: $brand-color-faded;
+    // background-image: url("https://source.unsplash.com/2zUjvV0M9dQ");
+    background-size: cover;
+    // opacity: 0.8;
+    height: 50%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.about {
+    .gridOf2{
+        .col1 {
+            background-image: url("https://source.unsplash.com/Ce_gQ7Z0eAc");
+            // padding-bottom: 20%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            margin-bottom: 20%;
+        }
+    }
+}
+.testimonialImg{
+    position: relative;
+    background-image: url("https://source.unsplash.com/vMV6r4VRhJ8");
+    background-size: cover;
+    $testimonialImgDiameter: 20vw;
+	height: $testimonialImgDiameter;
+	width: $testimonialImgDiameter;
+	left: 37%;
+	background-color: lightgray;
+	border-radius: drawCircle($testimonialImgDiameter);
+	margin-bottom: 10vh;
+}
+
+.ourTeam{
+    @include teamPhoto;
+}
+.teamPhoto{
+    background-size: cover;
+    background-position-x: -50px;
+}
+
+.blog{
+    @include blogImg;
+}
+
+.blogImg{
+    @extend .serviceImage;
+    background-image: url("https://source.unsplash.com/MwW-zrkYSIU");
+}
+
+.slider{
+    @include sliderImg;
+}

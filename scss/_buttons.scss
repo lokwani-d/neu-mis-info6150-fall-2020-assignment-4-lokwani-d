@@ -1,0 +1,83 @@
+//partial that carries styling of all the buttons and CTA btns on the page
+.landingPageBtn {
+    @include alignCentre;
+    color: $brand-color;
+    background-color: white;
+    height: 7vh;
+    width: 20vw;
+    border-radius: 3.5vh;
+    
+    p {
+        font-size: 1.5em;
+        padding-top: 1.7vh;
+    }
+}
+
+.moreServBtn {
+    font-size: 1.2em;
+    text-align: center;
+
+    margin: 3vh auto 0;
+    height: 6vh;
+    width:20vh;
+    background-color:$brand-color;
+    border-radius: 2.5vh;
+    p {
+        color: white;
+        padding-top: 1.5vh;
+    }
+}
+.about {
+    .moreInfoBtn {
+        position: relative;
+        right:-30%;
+        font-size: 1.2em;
+        text-align: center;
+        margin: 3vh auto 0 0;
+        height: 6vh;
+        width:20vh;
+        background-color: $brand-color;
+        border-radius: 1.5vh;
+        p {
+            position: relative;
+            top: 30%;
+            color: white;
+        }
+    }
+}
+
+.offer {
+    .ctaWhite {
+        text-align: center;
+        float: Right;
+        position: relative;
+        top: 9vh;
+        width: 10vw;
+        font-size: 1em;
+        background-color: white;
+        margin-left: 50vh;
+        border-radius: 10vh;
+        p{
+            font-size: 1.2em;
+            color: $brand-color;
+        }
+    }
+}
+
+.prices {
+    .buyNowBtn {
+        position: relative;
+        bottom: 0;
+        left: -0.5vw;
+        height: 6.5vh;
+        height: 7vh;
+        width: 106%;
+        background-color:$brand-color;
+        color: white;
+        p{
+            font-size: 1.3em;
+            position: relative;
+            top: 30%; 
+        }
+    }
+}

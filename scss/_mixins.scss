@@ -1,0 +1,54 @@
+//partial that carries all the mixins and functions
+
+//mixin to pad left and right
+@mixin container {
+    padding: 0 12vw 0 12vw;
+} 
+
+//mixin to align text to center
+@mixin alignCentre {
+    text-align: center;
+} 
+
+//function to draw circle based on diameter arg
+@function  drawCircle($diameter){
+    $borderRadius: $diameter/2;
+    @return $borderRadius;
+} 
+
+$serviceImgList: 2zUjvV0M9dQ cpIgNaazQ6w Ua9AK-pZ5cw oTvU7Zmteic; //list of images from unsplash
+
+@mixin service-Images{
+    @each $var in $serviceImgList {
+        .serviceImage-#{$var}{
+            background-image: url("https://source.unsplash.com/#{$var}");        
+        }
+    }
+} //mixin to add multiple images to the divs using each statement
+
+$teamPhotoList : rDEOVtE7vOs mEZ3PoFGs_k sibVwORYqs0;
+@mixin teamPhoto {
+    @each $photo in $teamPhotoList {
+        .teamPhoto-#{$photo}{
+            background-image: url("https://source.unsplash.com/#{$photo}");        
+        }
+    }
+}
+
+$blogImgList : XLm6-fPwK5Q _-KLkj7on_c MwW-zrkYSIU;
+@mixin blogImg{
+    @each $img in $blogImgList {
+        .blogImg-#{$img}{
+            background-image: url("https://source.unsplash.com/#{$img}");        
+        }
+    }
+}
+
+$sliderList: FSFfEQkd1sc KE0nC8-58MQ wgivdx9dBdQ y0Fa1DEKOKs;
+@mixin sliderImg{
+    @each $img in $sliderList {
+        .slider-#{$img}{
+            background-image: url("https://source.unsplash.com/#{$img}");        
+        }
+    }
+}
