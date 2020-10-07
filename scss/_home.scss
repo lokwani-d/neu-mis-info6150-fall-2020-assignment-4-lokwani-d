@@ -1,0 +1,288 @@
+//partial that carries overall styling of the elements
+.smallBanner {
+    @include container;
+    position: relative;
+    top: 0;
+    height: 75px;
+    border-bottom: 1px solid $secondary-color;
+    p {
+        padding-top: 12px;
+        display: inline;
+        color: $secondary-color;
+    }
+    .welcomeNote {
+        font-size: 1.1em;
+        float: left;
+        color: $secondary-color;
+    }
+    .bannerContact {
+        font-size: 1.1em;
+        float: right;
+        a {
+            text-decoration: none;
+            color: $brand-color;
+        }
+    }
+}
+.LandingPage {
+    @include container;
+    background-image: url("https://source.unsplash.com/__ZMnefoI3k");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+    // background-color: $brand-color;
+    // opacity: 0.4;
+    // background-size: 100%;
+    // margin: 0;
+    // padding: 0;
+    // width: 100vw;
+    // // background-repeat: no-repeat;
+    height: 82vh;
+
+}
+.landingText {
+    margin-top: 10vh;
+	position: absolute;
+	// height: 50vw;
+	width: 40vw;
+	color: white;
+}
+#headerText {
+	font-size: 3vw;
+}
+#trailerText {
+	font-size: 1.3vw;
+}
+
+.whyUs {
+    @include container;
+    @include alignCentre;
+	height: 60vh;
+    overflow: hidden;
+    
+    h4 {
+        padding-top: 2vh;
+        font-weight: lighter;
+        color: $brand-color;
+        padding-bottom: 2vh;
+    }
+    p {
+        color:$secondary-color;
+    }
+}
+
+.circle {
+    @include alignCentre;
+    margin: 10vh auto 0;
+    color: white;
+    height: $circle_diameter;
+    width: $circle_diameter;
+    background-color: $brand-color;
+    border-radius: drawCircle($circle_diameter);
+    h2 {
+        font-size: 4em;
+        position: relative;
+        top: 36%;
+    }
+}
+.circle + h4 {
+    margin: 10px auto;
+    font-size: 2em;
+}
+
+.sectionHeader {
+    @include container;
+    @include alignCentre;
+	margin: 8vh auto 7vh auto;
+	padding: 0;
+	font-size: 3em;
+    width: 20vw;
+    color: $brand-color;
+}
+.services {
+    @include container;
+	height: 50vh;
+    overflow: hidden;
+    
+}
+.servicesTitle {
+    color: $brand-color;
+    font-size: 1.5em;
+    margin: 0 0 10px 10px;
+}
+
+.serviceImage + p {
+    font-size: 1.2em;
+    color: $secondary-color;
+}
+.about {
+    @include container;
+    height: 90vh;
+    // margin-bottom: 20%;
+    overflow: hidden;
+    h1 {
+        color: $brand-color;
+    }
+    p {
+        color: $secondary-color;
+    }
+}
+.icon {
+    display: inline;
+    font-size: 5em;
+    margin: 12px auto;
+}
+.point {
+    display: inline;
+    font-size: 2em;
+    margin-left: 15%;
+}
+.description {
+    font-size: 1.3em;
+}
+
+
+.offer {
+    @include container;
+    background-color: $brand-color;
+    height: 25vh;
+    .offerText {
+        position: relative;
+        top: 40%;
+        display: inline;
+        color: white;
+        h2 {
+        font-size: 2em;
+        display: inline;
+        
+        }
+    }
+        
+}
+.ourTeam {
+    @include container;
+    @include alignCentre;
+	height: 70vh;
+    overflow: hidden;
+    h2 {
+        font-weight: lighter;
+        color: $brand-color;
+    }
+    p {
+        color: $secondary-color;
+    }
+}
+.prices {
+    @include container;
+    @include alignCentre;
+	height: 55.5vh;
+    // overflow: hidden;
+    color: $secondary-color;
+    i {
+        margin-top: 4vh;
+        margin-bottom: 2vh;
+        font-size: 4em;
+        color: $brand-color;
+    }
+    h2 {
+        color: $brand-color;
+    }
+    h1 {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    hr {
+        width: 24%;
+        color: lightgray;
+        margin-bottom: 0;
+    }
+    .col1:hover, .col2:hover, .col3:hover, .col4:hover {
+        // border: 2px solid $brand-color;
+        box-shadow: 2px 2px 20px rgba(55,175,168,1);
+    }
+}
+
+.blog {
+    @include container;
+	height: 60vh;
+    overflow: hidden;
+    p{
+        color: $secondary-color;
+    }
+}
+.profilePic {
+    position: relative;
+    top: 2%;
+    $profilePicDiameter: 6vh;
+    height: $profilePicDiameter;
+    width: $profilePicDiameter;
+    border-radius: drawCircle($profilePicDiameter);
+    background-color:$brand-color-faded;
+}
+.author {
+    position: relative;
+    bottom: 8%;
+    left: 20%;
+
+}
+.testimonial {
+    @include container;
+    @include alignCentre;
+    padding-top: 2vh;
+	height: 75vh;
+    p{
+        font-style: italic;
+        color: $secondary-color;
+    }
+}
+
+.testimonial .designation {
+	background-color: $brand-color;
+	padding-top: 20px;
+	height: 5vh;
+	width: 30vw;
+    margin-left: 23vw;
+    color: white;
+    font-size:1.2em;
+}
+.slider {
+	height: 45vh;
+    grid-column-gap: 1px;
+    
+    .col1:hover, .col2:hover, .col3:hover, .col4:hover{
+        box-shadow: 2px 2px 20px rgb(55, 57, 175);
+
+    }
+}
+
+
+
+.trailer {
+    @include container;
+    height: 30vh;
+    color: $secondary-color;
+    padding-top: 20px;
+    .main{
+        font-weight: 700;
+    }
+    .brandName {
+        color: $brand-color;
+        font-size: 1.8em;
+        font-weight: 700;
+    }
+    a {
+        text-decoration: none;
+        color: $secondary-color;
+    }
+    .gridOf4 {
+        grid-template-columns: 40% 15% 15% 20%;
+    }
+    span {
+        font-weight: 700;
+    }
+}
+
+
+
+    
+
