@@ -248,10 +248,21 @@
 .slider {
 	height: 45vh;
     grid-column-gap: 1px;
+
+    p{
+        opacity: 0;
+        justify-content: center;
+        text-align: center;
+        color: $brand-color;
+        align-items: center;
+    }
     
     .col1:hover, .col2:hover, .col3:hover, .col4:hover{
         box-shadow: 2px 2px 20px rgb(55, 57, 175);
-
+        p{
+            font-size: 32px;
+            opacity: 1;
+        }
     }
 }
 
