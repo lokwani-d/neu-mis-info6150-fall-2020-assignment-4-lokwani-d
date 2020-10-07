@@ -3,11 +3,8 @@
     @include service-Images;
 }
 .serviceImage {
-    // @include service-Images;
-    // background-color: $brand-color-faded;
-    // background-image: url("https://source.unsplash.com/2zUjvV0M9dQ");
+    
     background-size: cover;
-    // opacity: 0.8;
     height: 50%;
     width: 100%;
     margin: 0 auto;
@@ -18,7 +15,6 @@
     .gridOf2{
         .col1 {
             background-image: url("https://source.unsplash.com/Ce_gQ7Z0eAc");
-            // padding-bottom: 20%;
             background-size: cover;
             background-repeat: no-repeat;
             overflow: hidden;

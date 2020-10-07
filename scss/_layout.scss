@@ -6,13 +6,12 @@ html, body{
     scroll-behavior: smooth;
 }
 body {
-    // background-color: rgba($brand-color, 0.1);
     font-family: $font-stack;
-    // height: 100vh;
     width: 100vw;
     overflow-x: hidden;
 }
 /* Plain old CSS WAY to do configure the grid
+Keeping for the reference
 .col1{
 	grid-column: 1;
 	grid-row: 1;
